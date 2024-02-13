@@ -64,7 +64,7 @@ if __name__ == '__main__':
     paths = ('log_1.log', 'log_2.log', 'log_3.log')
     for path in paths:
 
-        @logger('log_1.log')
+        @logger(path)
         def hello_world():
             return 'Hello World'
 
